@@ -1,0 +1,22 @@
+
+/* ElektroStore Modern */
+:root{--bg:#0f1724;--card:#0b1220;--accent:#7c5cff;--muted:#9aa4b2;--white:#ffffff}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:linear-gradient(180deg,#f6f8fb 0%, #eef2ff 100%);color:var(--bg)}
+.container{max-width:1200px;margin:0 auto;padding:28px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.logo{font-weight:800;color:var(--bg);font-size:20px}
+.search{flex:1;margin:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:#fff;border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(15,23,36,0.06);overflow:hidden;display:flex;flex-direction:column;height:100%}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+.card-body{padding:12px 6px;display:flex;flex-direction:column;gap:8px;flex:1}
+.product-title{font-size:16px;font-weight:700;color:#071133;margin:0}
+.price{color:#c53030;font-weight:800}
+.meta{font-size:13px;color:var(--muted)}
+.actions{display:flex;gap:10px;margin-top:auto}
+.btn{padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px}
+.buy{background:linear-gradient(90deg,var(--accent),#4c8cff);color:#fff;border:none}
+.whatsapp{background:#25d366;color:#022;border:none}
+.footer{margin-top:28px;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:700px){.card img{height:160px}}
